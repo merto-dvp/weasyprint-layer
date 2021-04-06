@@ -30,10 +30,5 @@ $PIXBUF_BIN > /opt/lib/loaders.cache
 # https://www.linuxtopia.org/online_books/linux_desktop_guides/gnome_2.14_admin_guide/mimetypes-database.html
 cp -r /usr/share/mime /opt/lib/mime
 
-RUNTIME=$(echo "$AWS_EXECUTION_ENV" | cut -d _ -f 3)
-export RUNTIME
-mkdir -p "/opt/python/lib/$RUNTIME/site-packages"
-python -m pip install "weasyprint>=52.2" -t "/opt/python/lib/$RUNTIME/site-packages"
-
 cd /opt
 zip -r9 /out/layer.zip lib/* python/*
