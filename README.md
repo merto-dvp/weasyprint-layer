@@ -18,3 +18,11 @@ Environment variables expected by layer:
     GDK_PIXBUF_MODULE_FILE="/opt/lib/loaders.cache"
     FONTCONFIG_PATH="/opt/fonts"
     XDG_DATA_DIRS="/opt/lib"
+
+Add environment variables to template.yml
+
+      Environment:
+        Variables:
+          GDK_PIXBUF_MODULE_FILE: "/opt/lib/loaders.cache"
+          FONTCONFIG_PATH: "/opt/fonts"
+          XDG_DATA_DIRS: "/opt/lib"
