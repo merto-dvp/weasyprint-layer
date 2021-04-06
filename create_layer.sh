@@ -20,8 +20,9 @@ docker run --rm \
 	    && unzip fonts-layer.zip -d opt \
 	    && unzip weasyprint-no-fonts-layer.zip -d opt \
 	    && cd opt && zip -r9 ../weasyprint-layer-${RUNTIME}.zip .
-pwd
-ls -lah
+#pwd
+#ls -lah
+echo "Layer created and ready to use: weasyprint-layer.zip "
 mv -f ../weasyprint-layer-${RUNTIME}.zip ../../weasyprint-layer.zip
 
 
